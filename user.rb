@@ -4,11 +4,11 @@
 
 class User
     attr_accessor :booking, :name,
-    attr_reader :contact_number,
+    attr_reader :contact,
 
     def initialize(name)
         @name = name
-        @contact_number = contact_number
+        @contact = contact
         @booking = nil
     end
 end
