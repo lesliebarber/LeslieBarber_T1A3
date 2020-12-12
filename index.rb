@@ -72,8 +72,50 @@ while true
             
 
             #1 make a new booking
+
         when 1
+
+            if user.booking
+                clear
+                welcome(Unihouse)
+                puts "\n\n You already have a booking. \n\n"
+
+                #no booking as of yet
+            else
+                new_booking
+                room = Unihouse.select_room
+                # will display details of rooms, availablity giving options for the user to select date, time of day.
+
+
+                new_booking
+                room.show_room
+                room.show_time
+                booking_day = room.select_day
+
+                while booking_day. length ==0
+                    new_booking
+                    puts"\n\n No selection has been made \n\n"
+                    booking_day = room.select_day 
+                end
+
+                # create the booking
+                user.booking = booking.new(room,booking day,booking time)
+
+                # display the new booking for the user to review
+                clear
+                puts "Thank you for making a booking at Unihouse"
+                user.booking.display_booking(user,Unihouse)
+                back_main_menu
+            end
+
+
+            # existing booking
             
+
+
+
+            end
+
         end
     end
 end
