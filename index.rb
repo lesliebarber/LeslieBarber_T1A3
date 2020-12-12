@@ -66,8 +66,8 @@ while true
         menu.option('View an existing booking', 2)
         menu.option('view rooms' , 3)
         menu.option('view available times', 4)
-        menu.optionn('view price', 5)
-
+        menu.option('exit' , 5)
+       
         case selection
             
 
@@ -110,11 +110,65 @@ while true
 
 
             # existing booking
-            
+        when 2
 
+            if user.booking
 
+                clear
+                user.booking.display_booking(user, unihouse)
+                back_main_menu
 
+            else
+                #no booking
+                clear
+                welcome(Unihouse)
+                puts "\n\n I'm sorry you don't have a booking yet"
             end
+
+            # view different rooms
+        when 3
+            view_rooms
+            room = Unihouse.select_room
+
+            #Show the different room selected
+            room_name(room.type)
+            room.display_room
+            room.display_capacity
+            back_maim_menu
+
+        when 4
+
+            #Show the time of day available
+            room_name(room.availability)
+            room.display_day_availabilty
+            room.display_time_availablity
+            room.display_price
+            back_main_menu
+            
+        
+        #quit
+        
+        when 5
+            if user.booking
+                clear
+                puts "Thank you #{user_name} "
+                puts " We are looking forward to seeing you at Unihouse soon"
+                puts "Have a great day"
+                return
+            end
+        end
+    end
+    
+
+
+
+           
+
+
+
+
+
+
 
         end
     end
