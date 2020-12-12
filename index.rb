@@ -99,7 +99,7 @@ while true
                 end
 
                 # create the booking
-                user.booking = booking.new(room,booking day,booking time)
+                user.booking = booking.new(name, contact_number,room,booking day,booking time)
 
                 # display the new booking for the user to review
                 clear
@@ -158,7 +158,7 @@ while true
             end
         end
     end
-    
+
 
 
 
