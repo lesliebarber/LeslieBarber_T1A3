@@ -4,7 +4,7 @@
 
 class User
     attr_accessor :booking, :name, 
-    attr_reader :contact,
+    attr_reader :contact_number
 
     def initialize(name, contact,booking)
         @name = name
