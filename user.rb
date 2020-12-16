@@ -3,10 +3,10 @@
 # the user is the main class object which we need information from to enter into our bookings.
 
 class User
-    attr_accessor :booking, :name,
+    attr_accessor :booking, :name, 
     attr_reader :contact,
 
-    def initialize(name)
+    def initialize(name, contact,booking)
         @name = name
         @contact = contact
         @booking = nil

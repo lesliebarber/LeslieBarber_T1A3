@@ -12,11 +12,12 @@
 require 'tty-prompt'
 
 
+
 # create a venue with rooms to hire
-Unihouse = unihouse.new.add_room(kara.new).add_room(regency.new).add_room(celadon.new).add_room(victoria.new).add_room(leather.new)
+Unihouse = unihouse.new.add_room(kara.new).add_room(regency.new).add_room(celadon.new).add_room(victoria.new)
 
 # Welcome message
-
+clear
 welcome(Unihouse)
 
 # Enter the users details
@@ -35,7 +36,7 @@ while user_name_count < 4
 
     else
         user_name_count +=1
-        if user_name_count == 6
+        if user_name_count == 4
             clear
             puts "\n\n You must enter your name...."
             user_name = "No name for the booking"
@@ -99,7 +100,7 @@ while true
                 end
 
                 # create the booking
-                user.booking = booking.new(name, contact_number,room,booking day,booking time)
+                user.booking = booking.new(name, contact_number,room,booking_day,booking_time)
 
                 # display the new booking for the user to review
                 clear
@@ -151,25 +152,27 @@ while true
         when 5
             if user.booking
                 clear
-                puts "Thank you #{user_name} "
-                puts " We are looking forward to seeing you at Unihouse soon"
+                puts "Thank you #{user_name}"
+                puts "We are looking forward to seeing"
                 puts "Have a great day"
                 return
             end
         end
     end
-
-
-
-
-           
-
-
-
-
-
-
-
-        end
-    end
 end
+
+
+
+
+end
+
+end
+
+end
+
+
+
+
+
+
+
