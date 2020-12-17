@@ -63,7 +63,7 @@ end
 
 # creating details for a new user
 
-user = user.new(user_name)
+user = User.new(user_name)
 puts "\n\n Hello #{user.name} "
 
 # main menu options as a while loop
@@ -87,13 +87,13 @@ while true
 
             if user.booking
                 clear
-                welcome(Unihouse)
+                welcome(UNI_HOUSE)
                 puts "\n\n You already have a booking. \n\n"
 
                 #no booking as of yet
             else
                 new_booking
-                room = Unihouse.select_room
+                room = UNI_HOUSE.select_room
                 # will display details of rooms, availablity giving options for the user to select date, time of day.
 
 
@@ -114,7 +114,7 @@ while true
                 # display the new booking for the user to review
                 clear
                 puts "Thank you for making a booking at Unihouse"
-                user.booking.display_booking(user,Unihouse)
+                user.booking.display_booking(user,UNI_HOUSE)
                 back_main_menu
             end
 
@@ -125,20 +125,20 @@ while true
             if user.booking
 
                 clear
-                user.booking.display_booking(user, unihouse)
+                user.booking.display_booking(user, UNI_HOUSE)
                 back_main_menu
 
             else
                 #no booking
                 clear
-                welcome(Unihouse)
+                welcome(UNI_HOUSE)
                 puts "\n\n I'm sorry you don't have a booking yet"
             end
 
             # view different rooms
         when 3
             view_rooms
-            room = Unihouse.select_room
+            room = UNI_HOUSE.select_room
 
             #Show the different room selected
             room_name(room.type)
@@ -176,9 +176,8 @@ end
 
                
     
-            end 
-        end
-end
+        
+    
 
 
 

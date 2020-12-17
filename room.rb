@@ -66,7 +66,8 @@ end
 
 class Kara < Room
     def initialize
-        super("Executive Dining", ["Bigger group fine dining", "Drinks and canape", "Max 20 peoples"], 500,{Monday: "Available",Tuesday: "Available", Wednesday: "Available", Thursday:, "Available" Friday: "Available", Saturday: "Booked Out", Sunday: "Booked Out"})
+        super("Executive Dining", ["Bigger group fine dining", "Drinks and canape", "Max 20 peoples"], 500,{Monday: "Available",Tuesday: "Available", Wednesday: "Available", Thursday: "Available",
+            Friday: "Available", Saturday: "Booked Out", Sunday: "Booked Out"})
 
     end
 end
