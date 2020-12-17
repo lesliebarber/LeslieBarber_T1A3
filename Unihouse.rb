@@ -4,7 +4,7 @@ require_relative ' /methods/headers'
 
 
 
-class unihouse
+class Unihouse
 attr_reader :rooms, :name, :contact_number
 
 
@@ -52,11 +52,17 @@ def select_room
 
     #this used the tty gem to display the menu displaying the room selected
     selection = TTY::Prompt.new.select("Choose a room type:", menu, cycle: true, marker: '>', echo: false)
+    
     @room.each { |room| return room if room.type == selection }
 
 
 
+       
         end
+    
     end
+    
 
+end
 
+end

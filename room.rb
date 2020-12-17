@@ -85,7 +85,7 @@ end
 
 class Victoria < Room
     def initialize
-        super("Cosy", ["Perfect for intimate dining", "Private dining experience", "Drinks and canapes", "Max 6 people"], 250, {Monday:"Available",Tuesday:"Available", Wednesday: "Available" Thursday: "Available" , Friday:"Available", Saturday:"Booked Out", Sunday: "Booked Out"})
+        super("Cosy", ["Perfect for intimate dining", "Private dining experience", "Drinks and canapes", "Max 6 people"], 250, {Monday:"Available",Tuesday:"Available", Wednesday: "Available", Thursday: "Available" , Friday:"Available", Saturday:"Booked Out", Sunday: "Booked Out"})
 
     end
 end
