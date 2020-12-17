@@ -1,59 +1,58 @@
 require 'tty-prompt'
+# frozen_string_literal: true
 
 # this provides the information for the room.
 class Room
     attr_reader :type, :price, :availability
 
-    def initialize (type,name, price, availability)
+    def initialize(type, name, price, availability)
         @type = type
         @name = name
         @price = price
         @availability = availability
 
+   end
 
-    end
-
-    #this will display the room and its price
+    # this will display the room and its price
 
     def display_room
         puts "Room Type: #{@type}"
         puts "Price: #{@price} per session"
     end
 
-    #room availability
+    # room availability
     def display_time_availablity
         puts
-        puts "Time_Availablity:"
-        @availability.each {|day,session, status| puts "     * #{day} #{session}: #{status}"}
+        puts 'Time_Availablity:'
+        @availability.each { |day, session, status| puts "     * #{day} #{session}: #{status}" }
     
     end
 
     # details of the booking taking into account the availability of the room
     def
         select_day
-        days_ selected = []
-        session_selected =[]
-            select_days_selection(days_selected, session_selected)
-            return days_selected
-
+        days_selected = []
+        session_selected = []
+        select_days_selection(days_selected, session_selected)
+        return days_selected
     end
 
     def select_day_menu(days_menu)
         @availability.each do |day_session|
-            if day_session != "Available"
-                days_menu.push({name: days_session.to_s, disabled: "Booked Out"})
+            if day_session != 'Available'
+                days_menu.push({name: days_session.to_s, disabled: 'Booked Out'})
 
             else
-        day_session.push(name: day_session.to_s )
+        day_session.push(name: day_session.to_s)
 
 
             end
         end
     end
 
-#Giving the user opportunity to book their room taking into account if the room is available
+# Giving the user opportunity to book their room taking into account if the room is available
 
-def select__days_selection(days_selected, session_selected)
+    def select__days_selection(days_selected, session_selected)
     TTY::Prompt.new.multi_select("Please select your day to book in:", days_session, cycle: true, marker: '>', echo: false, per_page: 7).each do |day|
         @availability[day.to_sym] = "Booked Out"
         days_selected.push(day)
