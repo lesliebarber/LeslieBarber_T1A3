@@ -15,13 +15,13 @@ class Bookings
     # for the booking
     def display_bookings(user, unihouse)
         puts
-        puts HEADER_LINE
-        puts "#{user.name.upcase} 'BOOKING".center(HEADER_LENGTH)
-        puts HEADER_LINE
+        puts $HEADER_LINE
+        puts "#{user.name.upcase} 'BOOKING".center($HEADER_LENGTH)
+        puts $HEADER_LINE
         puts
         puts Unihouse.namw
         puts
-        puts HEADER_LINE
+        puts $HEADER_LINE
         puts
         puts "Room Type: #{@room.type}"
         @room.display_Room_type
@@ -31,7 +31,7 @@ class Bookings
         puts
         @session.each{|time| puts "    * #{session}"}
         puts
-        puts HEADER_LINE
+        puts $HEADER_LINE
 
     end
 

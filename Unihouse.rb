@@ -20,13 +20,13 @@ end
 
 
 def Unihouse_infomation
-    puts HEADER_LINE
-    puts"#{@name.upcase}" .center{HEADER_LENGTH}
-    HEADER_LINE
+    puts $HEADER_LINE
+    puts"#{@name.upcase}" .center{$HEADER_LENGTH}
+    $HEADER_LINE
     puts
     contact_info
     puts
-    puts HEADER_LINE
+    puts $HEADER_LINE
     puts
 end
 
