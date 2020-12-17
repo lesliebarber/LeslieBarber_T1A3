@@ -73,11 +73,11 @@ while true
     welcome (Unihouse)
 
     selection = TTY::Prompt.new.select("Greeting how can we help you today? Please choose from the following options:", cycle: true, marker: '>', echo: false) do |menu|
-        menu.option('Make a new booking' , 1)
-        menu.option('View an existing booking', 2)
-        menu.option('view rooms' , 3)
-        menu.option('view available times', 4)
-        menu.option('exit' , 5)
+        menu.choice('Make a new booking' , 1)
+        menu.choice('View an existing booking', 2)
+        menu.choice('view rooms' , 3)
+        menu.choice('view available times', 4)
+        menu.choice('exit' , 5)
        
         case selection
             

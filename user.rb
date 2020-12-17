@@ -6,9 +6,10 @@ class User
     attr_accessor :booking, :name
     attr_reader :contact
 
-    def initialize(name, contact,booking)
+    def initialize(name, contact)
         @name = name
         @contact = contact
-        @booking = 
+        @booking = []
+         
     end
 end
