@@ -10,6 +10,11 @@
 #-----------------------------------------------------------------
 
 require 'tty-prompt'
+require_relative './Unihouse'
+require_relative './room'
+require_relative './user'
+require_relative './bookings'
+require_relative './methods'
 
 
 
