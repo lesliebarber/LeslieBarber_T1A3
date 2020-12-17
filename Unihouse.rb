@@ -4,12 +4,12 @@ require_relative ' /methods/headers'
 
 
 
-class Unihouse
+class unihouse
 attr_reader :rooms, :name, :contact_number
 
 
 def initialize
-    @name = "Unihouse"
+    @name = "unihouse"
     @address = "112 Professors Walk"
     @phone = "1300 unihouse"
     @email = "bookings@unihouse.org.au"
@@ -58,3 +58,5 @@ def select_room
 
         end
     end
+
+

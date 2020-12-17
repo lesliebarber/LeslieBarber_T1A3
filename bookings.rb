@@ -1,8 +1,8 @@
-requires_relative 
+requires_relative 'methods/headers'
 
 # This is for the booking information
 
-class Booking
+class booking
     attr_reader :days, :session
 
     def initialize(room, days, session)
@@ -13,7 +13,7 @@ class Booking
     end
 
     # for the booking
-    def display_booking(user, Unihouse)
+    def display_booking(user, unihouse)
         puts
         puts HEADER_LINE
         puts "#{user.name.upcase} 'BOOKING".center(HEADER_LENGTH)
@@ -39,6 +39,11 @@ class Booking
     def booking_price 
         return @room.price.to_f *@days.length
     
+        end
+    
+    
     end
 
-end
+
+
+
