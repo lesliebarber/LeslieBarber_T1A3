@@ -40,13 +40,13 @@ while user_name_count < 4
     user_name = gets.chomp.capitalize
 
     if user_name !=""
-        clear
+        system "clear"
         break
 
     else
         user_name_count +=1
         if user_name_count == 4
-            clear
+            system "clear"
             puts "\n\n You must enter your name...."
             user_name = "No name for the booking"
 
@@ -62,8 +62,9 @@ end
 
 
 # creating details for a new user
-
-user = User.new(user_name)
+puts "please enter your contact number"
+contact_number = gets.chomp
+user = User.new(user_name, contact_number)
 puts "\n\n Hello #{user.name} "
 
 # main menu options as a while loop
@@ -86,7 +87,7 @@ while true
         when 1
 
             if user.booking
-                clear
+                system "clear"
                 welcome(UNI_HOUSE)
                 puts "\n\n You already have a booking. \n\n"
 
@@ -112,7 +113,7 @@ while true
                 user.booking = booking.new(name, contact_number,room,booking_day,booking_time)
 
                 # display the new booking for the user to review
-                clear
+                system "clear"
                 puts "Thank you for making a booking at Unihouse"
                 user.booking.display_booking(user,UNI_HOUSE)
                 back_main_menu
@@ -124,13 +125,13 @@ while true
 
             if user.booking
 
-                clear
+                system "clear"
                 user.booking.display_booking(user, UNI_HOUSE)
                 back_main_menu
 
             else
                 #no booking
-                clear
+                system "clear"
                 welcome(UNI_HOUSE)
                 puts "\n\n I'm sorry you don't have a booking yet"
             end
@@ -160,7 +161,7 @@ while true
         
         when 5
             if user.booking
-                clear
+                system "clear"
                 puts "Thank you #{user_name}"
                 puts "We are looking forward to seeing"
                 puts "Have a great day"

@@ -27,14 +27,14 @@ end
 
 
 
-# def welcome(uni_house)
-#     puts
-#     puts $HEADER_LINE
-#     puts "Welcome to ".center($HEADER_LENGTH)
-#     puts "#{uni_house.name} #uni_house!.center($HEADER_LENGTH)"
-#     puts $HEADER_LINE
-#     puts
-# end
+ def welcome(uni_house)
+    puts
+    puts $HEADER_LINE
+    puts "Welcome to ".center($HEADER_LENGTH)
+    puts "#{uni_house.name} #uni_house!.center($HEADER_LENGTH)"
+    puts $HEADER_LINE
+    puts
+end
 
 
 def new_booking_header

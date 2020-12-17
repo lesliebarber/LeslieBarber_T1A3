@@ -9,6 +9,6 @@ class User
     def initialize(name, contact,booking)
         @name = name
         @contact = contact
-        @booking = nil
+        @booking = 
     end
 end
