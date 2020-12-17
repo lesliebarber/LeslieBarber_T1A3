@@ -37,7 +37,7 @@ class booking
 
     #booking cost
     def booking_price 
-        return @room.price.to_f *@days.length
+        return @room.price.to_f @days.length
     
         end
     
