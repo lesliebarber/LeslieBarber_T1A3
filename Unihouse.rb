@@ -1,5 +1,6 @@
 require 'tty-prompt'
-require_relative ' /methods/headers'
+require_relative './methods'
+# frozen_string_literal: true
 
 
 
@@ -33,13 +34,14 @@ def contact_information
     puts "Address: #{@address}"
     puts "Contact No: #{@phone}"
     puts "Email #{@email}"
+end
 
-
-    #for adding a room
-    def add_room(room)
-        @room << room
-        return self
-    end
+  
+#for adding a room
+def add_room(room)
+     @room << room
+     return self
+end
 
 
 #option to select a room in Unihouse
@@ -53,16 +55,18 @@ def select_room
     #this used the tty gem to display the menu displaying the room selected
     selection = TTY::Prompt.new.select("Choose a room type:", menu, cycle: true, marker: '>', echo: false)
     
-    @room.each { |room| return room if room.type == selection }
-
-
-
-       
+    @room.each  do |room|
+        if room.type == selection 
+            return room 
         end
-    
+
+
     end
+       
+ end
     
 
-end
+    
 
-end
+
+
