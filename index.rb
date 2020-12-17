@@ -19,7 +19,11 @@ require_relative './methods'
 
 
 # create a venue with rooms to hire
-Unihouse = unihouse.new.add_room(kara.new).add_room(regency.new).add_room(celadon.new).add_room(victoria.new)
+UNI_HOUSE = Unihouse.new
+UNI_HOUSE.add_room(Kara.new())
+UNI_HOUSE.add_room(Regency.new())
+UNI_HOUSE.add_room(Celadon.new())
+UNI_HOUSE.add_room(Victoria.new())
 
 # Welcome message
 clear

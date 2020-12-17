@@ -4,8 +4,9 @@ require 'tty-prompt'
 class Room
     attr_reader :type, :price, :availability
 
-    def initialize (type, price, availability)
+    def initialize (type,name, price, availability)
         @type = type
+        @name = name
         @price = price
         @availability = availability
 
