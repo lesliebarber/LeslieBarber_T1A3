@@ -27,7 +27,7 @@ UNI_HOUSE.add_room(Victoria.new())
 
 # Welcome message
 clear
-welcome(Unihouse)
+welcome(UNI_HOUSE)
 
 # Enter the users details
 
