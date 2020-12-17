@@ -1,4 +1,4 @@
-requires_relative 'methods/headers'
+require_relative './methods'
 
 # This is for the booking information
 # frozen_string_literal: true
