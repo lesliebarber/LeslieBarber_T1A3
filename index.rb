@@ -26,7 +26,7 @@ UNI_HOUSE.add_room(Celadon.new())
 UNI_HOUSE.add_room(Victoria.new())
 
 # Welcome message
-clear
+system "clear"
 welcome(UNI_HOUSE)
 
 # Enter the users details
