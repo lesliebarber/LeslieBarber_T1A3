@@ -74,11 +74,11 @@ while true
 
     selection = TTY::Prompt.new.select("Greeting how can we help you today? Please choose from the following options:", cycle: true, marker: '>', echo: false) do |menu|
         menu.choice('Make a new booking' , 1)
-        menu.choice('View an existing booking', 2)
-        menu.choice('view rooms' , 3)
-        menu.choice('view available times', 4)
-        menu.choice('exit' , 5)
-       
+        menu.choice('view rooms', 2)
+        menu.choice('view available times' , 3)
+        menu.choice('exit', 4)
+        
+        
         case selection
             
 
