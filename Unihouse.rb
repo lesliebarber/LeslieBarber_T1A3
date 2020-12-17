@@ -39,7 +39,7 @@ end
   
 #for adding a room
 def add_room(room)
-     @room << room
+     @rooms << room
      return self
 end
 
