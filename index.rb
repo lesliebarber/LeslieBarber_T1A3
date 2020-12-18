@@ -95,23 +95,23 @@ while true
 
 
                 new_booking
-                room.show_room
-                room.show_time
+                puts room
+                room.display_room
                 booking_day = room.select_day
 
-                while booking_day. length ==0
+                # while booking_day. length ==0
                     new_booking
                     puts"\n\n No selection has been made \n\n"
                     booking_day = room.select_day 
-                end
+                # end
 
                 # create the booking
-                user.booking = booking.new(name, contact_number,room,booking_day,booking_time)
+                user.booking = Bookings.new(room,booking_day,)
 
                 # display the new booking for the user to review
                 system "clear"
                 puts "Thank you for making a booking at Unihouse"
-                user.booking.display_booking(user,UNI_HOUSE)
+                user.booking.display_bookings(user,UNI_HOUSE)
                 back_main_menu
             end
 
@@ -122,7 +122,7 @@ while true
             if user.booking
 
                 system "clear"
-                user.booking.display_booking(user, UNI_HOUSE)
+                user.booking.display_bookings(user, UNI_HOUSE)
                 back_main_menu
 
             else
@@ -140,27 +140,23 @@ while true
             #Show the different room selected
               room_name(room.type)
               room.display_room
-              room.display_capacity
               back_main_menu
 
-        when 4
 
             #Show the time of day available
-            room_name(room.availability)
-            room.display_day_availabilty
-            room.display_time_availablity
-            room.display_price
-            back_main_menu
+            # room_name(room.availability)
+            # room.display_day_availabilty
+            # room.display_time_availablity
+            # room.display_price
+            # back_main_menu
         # quit
-        when 5
-          if user.booking
+        when 4
             system 'clear'
             puts "Thank you #{user_name}"
             puts 'We are looking forward to seeing'
             puts 'Have a great day'
-            system 'clear'
-            break
-        end
+            sleep 0.5
+            exit
         end
     end
 end

@@ -6,10 +6,10 @@ require_relative './methods'
 class Bookings
   attr_reader :days, :session
 
-  def initialize(room, days,session )
+  def initialize(room, days)
     @room = room
     @days = days
-    @session = session_selected
+
   end
 
   # for the booking
@@ -24,23 +24,21 @@ class Bookings
     puts $HEADER_LINE
     puts
     puts "Room Type: #{@room.type}"
-    @room.display_Room_type
+    @room.display_room
     puts
     puts 'Booking Days:'
     @days.each { |day| puts "     * #{day}" }
     puts
-    @session.each { |time| puts "   * #{session}" }
-    puts
     puts $HEADER_LINE
 
-  end
+
 
     # booking cost
     def bookings_price
     @room.price.to_f @days.length
     return
     end
-  end
-
+  
+end
 
 end

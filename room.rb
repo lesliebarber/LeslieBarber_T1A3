@@ -23,7 +23,7 @@ class Room
     def display_time_availablity
         puts
         puts 'Time_Availablity:'
-        @availability.each { |day, session, status| puts "     * #{day} #{session}: #{status}" }
+        @availability.each { |day, session, status| puts "     * #{day} : #{status}" }
     
     end
 
@@ -32,7 +32,7 @@ class Room
         select_day
         days_selected = []
         session_selected = []
-        select_days_selection(days_selected, session_selected)
+        select_days_selection(days_selected, )
         return days_selected
     end
 

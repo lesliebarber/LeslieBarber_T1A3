@@ -43,17 +43,18 @@ end
 # option to select a room in Unihouse
 def select_room
     # display of the room options
-    menu = [kara, celadon, regency, victoria]
-    @room. each { |room| menu.push(room.type)}
+    menu = []
+    @rooms. each { |room| menu.push(room.type)}
     
 
     # this used the tty gem to display the menu displaying the room selected
     selection = TTY::Prompt.new.select("Choose a room type:", menu, cycle: true, marker: '>', echo: false)
     
-    @room.each  do |room|
+    @rooms.each  do|room|
         if room.type == selection
             return room
-        end
+        end 
+    end
 end
        
 end

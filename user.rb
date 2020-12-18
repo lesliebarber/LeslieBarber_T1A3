@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # the user is the main class object which we need information from to enter into our bookings.
-
+require_relative "bookings"
 class User
   attr_accessor :booking, :name
   attr_reader :contact
@@ -9,6 +9,6 @@ class User
   def initialize(name, contact)
     @name = name
     @contact = contact
-    @booking = []
+    @booking = nil 
   end
 end

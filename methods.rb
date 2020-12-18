@@ -27,7 +27,7 @@ def welcome(uni_house)
   puts
 end
 
-def new_booking_header
+def new_booking
   system 'clear'
   puts
   puts $HEADER_LINE
@@ -40,13 +40,20 @@ def view_rooms
   system 'clear'
   puts
   puts $HEADER_LINE
-  puts"#{view rooms .upcase.center($HEADER+LENGTH)}"
+#   puts"#{view_rooms.upcase.center($HEADER+LENGTH)}"
 end
 
-def room_name
+def room_name(room_name)
   system 'clear'
   puts
   puts $HEADER_LINE
-  puts "#{room_name Room .upcase($HEADER_LENGTH)}"
+  puts "#{room_name }"
   puts $HEADER_LINE
+
+  
+end
+def select_days_selection(day_selection)
+    system 'clear'
+    puts $HEADER_LINE
+    puts "#{day_selection}"
 end
