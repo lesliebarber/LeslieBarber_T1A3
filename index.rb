@@ -165,6 +165,10 @@ while true
                 puts "Thank you #{user_name}"
                 puts "We are looking forward to seeing"
                 puts "Have a great day"
+                system 'clear'
+                next
+            when "exit"
+                puts "\n\n Good Bye"
                 return
             end
         end
