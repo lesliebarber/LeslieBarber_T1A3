@@ -1,6 +1,6 @@
 # LeslieBarber_T1A3
 
-#References
+# References
 The references that where used in the development of the app are for the gem that is included in the app 
 https://ttytoolkit.org/
 https://github.com/piotrmurach/tty-prompt#ttyprompt- 
@@ -10,9 +10,9 @@ the first was used to get information about the gem and how to install it as a b
 https://github.com/lesliebarber/LeslieBarber_T1A3
 Above link for the source code on github.
 
-# Software Development plan 
+#  Software Development plan 
 The app I have designed for a user is for University house which is a private members club in Melbourne University It is a booking app for 4 of the rooms that are available there.
-# Purpose
+#  Purpose
 The purpose of the app is to provide a service that gives the opportunity to book the room for your enjoyment. It would provide a quick way for the user to give their details including their name and a contact number so that they can see if they can book their group into one of the rooms.  This would take pressure off the staff at University house because they would be able to see the booking rather than always taking phone calls.  
 The app will welcome the user to UniHouse give them options of which room they would like to book takes them though the process and then gives them the information before wishing them well and saying goodbye see you soon.
 Because University house can get quiet busy with events. This will help the staff to control the booking system.  Currently there can be some issues with bookings that haven't been entered into a system causing conflict. With clients that turn up thinking they have a booking but none has been entered into the system.
@@ -38,6 +38,26 @@ We also have local variables used for scope with our class ,modules and def.  Th
 - how the user will find out how to interact with / use each feature
 - how the user will interact with / use each feature
 - how errors will be handled by the application and displayed to the user
+The user will be provided with is readme document as well the members of the club will be provided the details of the app and help file so that they can easily access the app to use it.
+The user will be able to use all of the features easily because of the menu provided giving them options at their finger tips.  And an easy to follow step though the app to make the boking and then exit.
+
+The app provides support for the user if they don't put in correct details for a booking. It returns them to the beginning to start again.  This suports the user error because it stops them from entering nothing or incorrect information.
+
+# Help Documentations for the app
+
+For the user to be able to us the app They will need to aquire the gem TTY-Prompt if they don'y all ready have it installed.
+They can get the app through 
+https://rubygems.org/gems/tty-prompt/versions/0.23.0
+this is ruby gems.  
+If you wish to gain all of the content us bundle in terminal to access the needed gem file.
+If you only want to use the prompt use the following command in terminal
+gem install tty-prompt.  This will get the gem you need for the app.
+ 
+
+
+
+
+
 
 
 
