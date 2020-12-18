@@ -6,14 +6,14 @@ require_relative './methods'
 class Bookings
   attr_reader :days, :session
 
-  def initialize(room, days, session)
+  def initialize(room, days,session )
     @room = room
     @days = days
     @session = session_selected
   end
 
   # for the booking
-  def display_bookings(user,unihouse)
+  def display_bookings(user,uni_house)
     puts
     puts $HEADER_LINE
     puts "#{user.name.upcase} 'BOOKING".center($HEADER_LENGTH)

@@ -141,7 +141,7 @@ while true
               room_name(room.type)
               room.display_room
               room.display_capacity
-              back_maim_menu
+              back_main_menu
 
         when 4
 
@@ -151,9 +151,7 @@ while true
             room.display_time_availablity
             room.display_price
             back_main_menu
-            
-        
-        #quit
+        # quit
         when 5
           if user.booking
             system 'clear'
@@ -162,7 +160,7 @@ while true
             puts 'Have a great day'
             system 'clear'
             break
-            end
+        end
         end
     end
 end

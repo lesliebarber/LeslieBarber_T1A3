@@ -1,25 +1,23 @@
-require 'tty-prompt'
 # frozen_string_literal: true
+require 'tty-prompt'
 
 # this provides the information for the room.
 class Room
-    attr_reader :type, :price, :availability
+  attr_reader :type, :price, :availability
 
-    def initialize(type, name, price, availability)
-        @type = type
-        @name = name
-        @price = price
-        @availability = availability
-
-    end
+  def initialize(type, name, price, availability)
+  @type = type
+  @name = name
+  @price = price
+  @availability = availability
+  end
 
     # this will display the room and its price
 
-    def display_room
+  def display_room
         puts "Room Type: #{@type}"
         puts "Price: #{@price} per session"
-
-    end
+  end
 
     # room availability
     def display_time_availablity
