@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #-----------------------------------------------------------------
 #
 #                       University House Room Bookings
@@ -26,18 +28,18 @@ UNI_HOUSE.add_room(Celadon.new())
 UNI_HOUSE.add_room(Victoria.new())
 
 # Welcome message
-system "clear"
+system 'clear'
 welcome(UNI_HOUSE)
 
 # Enter the users details
 
-puts "please enter your name:"
+puts 'please enter your name:'
 
 # creating a user info loop to make sure the user adds input. Gives the user oppportunity to enter input 4 times will exit the loop if nothing is added
 
 user_name_count = 0
 while user_name_count < 4
-    user_name = gets.chomp.capitalize
+user_name = gets.chomp.capitalize
 
     if user_name !=""
         system "clear"
@@ -70,7 +72,7 @@ puts "\n\n Hello #{user.name} "
 # main menu options as a while loop
 while true
 
-    welcome (Unihouse)
+    welcome(Unihouse)
 
     selection = TTY::Prompt.new.select("Greeting how can we help you today? Please choose from the following options:", cycle: true, marker: '>', echo: false) do |menu|
         menu.choice('Make a new booking 1' , 1)
