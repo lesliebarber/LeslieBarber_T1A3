@@ -64,7 +64,7 @@ end
 
 class Kara < Room
     def initialize
-        super("Executive Dining", ["Bigger group fine dining", "Drinks and canape", "Max 20 peoples"], 500,{Monday: "Available",Tuesday: "Available", Wednesday: "Available", Thursday: "Available",
+        super(" Kara Executive Dining", ["Bigger group fine dining", "Drinks and canape", "Max 20 peoples"], 500,{Monday: "Available",Tuesday: "Available", Wednesday: "Available", Thursday: "Available",
             Friday: "Available", Saturday: "Booked Out", Sunday: "Booked Out"})
 
     end
@@ -72,20 +72,20 @@ end
 
 class Regency < Room
     def initialize
-        super("Perfect meeting room",["High tea", "intimate canapes and drinks", "business meeting", "Max 5 people"], 200,{Monday: "Available",Tuesday: "Available", Wednesday: "Available", Thursday: "Available", Friday: "Available", Saturday: "Booked Out", Sunday: "Booked Out"})
+        super(" Regency Perfect meeting room",["High tea", "intimate canapes and drinks", "business meeting", "Max 5 people"], 200,{Monday: "Available",Tuesday: "Available", Wednesday: "Available", Thursday: "Available", Friday: "Available", Saturday: "Booked Out", Sunday: "Booked Out"})
 
     end
 end
 
 class Celadon < Room
     def initialize
-        super("Cosy", ["Perfect for intimate dining", "Private dining experience", "Drinks and canapes", "Max 6 people"], 200, {Monday:"Available",Tuesday:"Available", Wednesday:"Available", Thursday:"Available", Friday:"Available", Saturday:"Booked Out", Sunday: "Booked Out"})
+        super(" Celadon Cosy", ["Perfect for intimate dining", "Private dining experience", "Drinks and canapes", "Max 6 people"], 200, {Monday:"Available",Tuesday:"Available", Wednesday:"Available", Thursday:"Available", Friday:"Available", Saturday:"Booked Out", Sunday: "Booked Out"})
     end
 end
 
 class Victoria < Room
     def initialize
-        super("Cosy", ["Perfect for intimate dining", "Private dining experience", "Drinks and canapes", "Max 6 people"], 250, {Monday:"Available",Tuesday:"Available", Wednesday: "Available", Thursday: "Available" , Friday:"Available", Saturday:"Booked Out", Sunday: "Booked Out"})
+        super("Victoria Cosy", ["Perfect for intimate dining", "Private dining experience", "Drinks and canapes", "Max 6 people"], 250, {Monday:"Available",Tuesday:"Available", Wednesday: "Available", Thursday: "Available" , Friday:"Available", Saturday:"Booked Out", Sunday: "Booked Out"})
 
     end
 end
