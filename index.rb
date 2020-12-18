@@ -18,8 +18,6 @@ require_relative './user'
 require_relative './bookings'
 require_relative './methods'
 
-
-
 # create a venue with rooms to hire
 UNI_HOUSE = Unihouse.new
 UNI_HOUSE.add_room(Kara.new())
@@ -35,7 +33,7 @@ welcome(UNI_HOUSE)
 
 puts 'please enter your name:'
 
-# creating a user info loop to make sure the user adds input. Gives the user oppportunity to enter input 4 times will exit the loop if nothing is added
+# creating a user info loop to make sure the user adds input. Gives the user oppportunity to enter input 4 times b4 exit.
 
 user_name_count = 0
 while user_name_count < 4

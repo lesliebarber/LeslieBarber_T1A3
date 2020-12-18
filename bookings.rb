@@ -26,18 +26,18 @@ class Bookings
     @room.display_Room_type
     puts
     puts 'Booking Days:'
-    @days.each {|day| puts "     * #{day}" }
+    @days.each { |day| puts "     * #{day}" }
     puts
-    @session.each{|time| puts "   * #{session}"}
+    @session.each { |time| puts "   * #{session}" }
     puts
     puts $HEADER_LINE
 
   end
 
     # booking cost
-    def bookings_price 
-   @room.price.to_f @days.length
-   return 
+    def bookings_price
+    @room.price.to_f @days.length
+    return
     end
   end
 
