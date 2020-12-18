@@ -48,7 +48,7 @@ end
 def select_room
 
     #display of the room options
-    menu = []
+    menu = [kara,celadon,regency,victoria]
     @room. each { |room| menu.push(room.type)}
     
 

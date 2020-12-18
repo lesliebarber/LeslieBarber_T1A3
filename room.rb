@@ -18,6 +18,7 @@ class Room
     def display_room
         puts "Room Type: #{@type}"
         puts "Price: #{@price} per session"
+        
     end
 
     # room availability

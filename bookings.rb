@@ -19,7 +19,7 @@ class Bookings
         puts "#{user.name.upcase} 'BOOKING".center($HEADER_LENGTH)
         puts $HEADER_LINE
         puts
-        puts Unihouse.namw
+        puts Unihouse.new
         puts
         puts $HEADER_LINE
         puts

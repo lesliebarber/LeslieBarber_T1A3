@@ -12,7 +12,7 @@ $HEADER_LENGTH = $HEADER_LINE.length
 def back_main_menu
     puts "Press any keys to return to the main menu"
     $stdin.getch
-    clear
+    system "clear"
     puts $HEADER_LINE
     puts "loading" .upcase.center($HEADER_LENGTH)
     puts $HEADER_LINE
@@ -38,7 +38,7 @@ end
 
 
 def new_booking_header
-    clear
+    system "clear"
     puts
     puts $HEADER_LINE
     puts "Please create a new booking".upcase.center($HEADER_LENGTH)
@@ -47,15 +47,15 @@ def new_booking_header
 end
 
 
-def view_rooms_header
-    clear
+def view_rooms
+    system "clear"
     puts
     puts $HEADER_LINE
     puts
 end
 
-def room_name_header
-    clear
+def room_name
+    system "clear"
     puts
     puts $HEADER_LINE
     puts "#{room_name Room .upcase($HEADER_LENGTH)}"
