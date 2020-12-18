@@ -52,7 +52,11 @@ this is ruby gems.
 If you wish to gain all of the content us bundle in terminal to access the needed gem file.
 If you only want to use the prompt use the following command in terminal
 gem install tty-prompt.  This will get the gem you need for the app.
- 
+For more information on this gem for its use  the author has
+all of this on git hub the link is as foolows.
+https://github.com/piotrmurach/tty-prompt#ttyprompt-
+
+
 
 
 
