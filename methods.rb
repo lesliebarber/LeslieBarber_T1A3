@@ -1,6 +1,7 @@
 
 
 require 'tty-prompt'
+# frozen_string_literal: true
 
 $HEADER_LINE = "__________________________________________________"
 $HEADER_LENGTH = $HEADER_LINE.length

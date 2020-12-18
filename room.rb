@@ -11,14 +11,14 @@ class Room
         @price = price
         @availability = availability
 
-   end
+    end
 
     # this will display the room and its price
 
     def display_room
         puts "Room Type: #{@type}"
         puts "Price: #{@price} per session"
-        
+
     end
 
     # room availability
