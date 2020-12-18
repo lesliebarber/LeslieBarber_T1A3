@@ -56,6 +56,25 @@ For more information on this gem for its use  the author has
 all of this on git hub the link is as foolows.
 https://github.com/piotrmurach/tty-prompt#ttyprompt-
 
+# Testing
+
+When it came to testing 
+There where two tests done to see how the application runs.
+# The first was after the initial loop was written in index.rb to see if it ran or there where errors.
+Because this is the loop that connects all of the features it was important to see if it was functional.  This was done before added the classes and methods required to the app what it is now.
+
+# The second test
+The second test where run once the classes method was added.  In hindsight this was a mistakes as it caused a blowout of earror fixing.  More test should have been preformed early to pick up earrors as the app was wriiten.
+The second text was again using Ruby Index.rb
+then seeing if the menu worked or failed.
+the app failed because of a few errors 
+being
+Undefined method 'display booking' for [] array.
+view_room undefined local variable or method 'rooms' for main object
+undefined method availablity for nil nil class (no method error)
+However after some assistance from Daniel and tracing back to the source the features of the app now function as they should.
+
+
 
 
 
