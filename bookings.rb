@@ -1,7 +1,8 @@
 require_relative './methods'
+# frozen_string_literal: true
 
 # This is for the booking information
-# frozen_string_literal: true
+
 class Bookings
   attr_reader :days, :session
 
@@ -12,7 +13,7 @@ class Bookings
   end
 
   # for the booking
-  def display_bookings(user, unihouse)
+  def display_bookings(user,unihouse)
     puts
     puts $HEADER_LINE
     puts "#{user.name.upcase} 'BOOKING".center($HEADER_LENGTH)

@@ -33,36 +33,32 @@ welcome(UNI_HOUSE)
 
 puts 'please enter your name:'
 
-# creating a user info loop to make sure the user adds input. Gives the user oppportunity to enter input 4 times b4 exit.
-
+# creating a loop to make sure the user adds input.
 user_name_count = 0
 while user_name_count < 4
-user_name = gets.chomp.capitalize
+  user_name = gets.chomp.capitalize
 
-    if user_name !=""
-        system "clear"
+    if user_name != ''
+      system 'clear'
         break
 
     else
-        user_name_count +=1
+      user_name_count += 1
         if user_name_count == 4
-            system "clear"
-            puts "\n\n You must enter your name...."
-            user_name = "No name for the booking"
+          system 'clear'
+          puts "\n\n You must enter your name...."
+          user_name = 'No name for the booking'
 
         else
-            puts "Please enter your name to make a booking"
-
+          puts 'Please enter your name to make a booking'
 
         end
     end
 
 end
 
-
-
 # creating details for a new user
-puts "please enter your contact number"
+puts 'please enter your contact number'
 contact_number = gets.chomp
 user = User.new(user_name, contact_number)
 puts "\n\n Hello #{user.name} "
@@ -138,14 +134,14 @@ while true
 
             # view different rooms
         when 3
-            view_rooms
-            room = UNI_HOUSE.select_room
+          view_rooms
+          room = UNI_HOUSE.select_room
 
             #Show the different room selected
-            room_name(room.type)
-            room.display_room
-            room.display_capacity
-            back_maim_menu
+              room_name(room.type)
+              room.display_room
+              room.display_capacity
+              back_maim_menu
 
         when 4
 
@@ -158,32 +154,15 @@ while true
             
         
         #quit
-        
         when 5
-            if user.booking
-                system "clear"
-                puts "Thank you #{user_name}"
-                puts "We are looking forward to seeing"
-                puts "Have a great day"
-                system 'clear'
-                break
+          if user.booking
+            system 'clear'
+            puts "Thank you #{user_name}"
+            puts 'We are looking forward to seeing'
+            puts 'Have a great day'
+            system 'clear'
+            break
             end
         end
     end
 end
-
-
-
-
-
-               
-    
-        
-    
-
-
-
-
-
-
-
